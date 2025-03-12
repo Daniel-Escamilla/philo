@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 11:10:17 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/12 11:10:51 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/12 16:03:08 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 # define MAIN_H
 
 # include "../philo.h"
+
+int	main(int argc, char **argv);
 
 #endif
