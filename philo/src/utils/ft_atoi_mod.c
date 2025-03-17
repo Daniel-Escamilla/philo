@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 15:21:42 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/17 11:57:41 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/17 12:20:39 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ static int	calculate_result(char *str, int *i, int *error, int sign)
 	int	digit;
 
 	result = 0;
-
 	while (str[*i] >= '0' && str[*i] <= '9')
 	{
 		digit = str[*i] - '0';

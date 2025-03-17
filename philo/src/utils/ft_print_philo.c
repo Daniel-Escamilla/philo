@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 15:52:09 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/12 16:06:34 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/17 13:17:29 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,4 @@ void	print_times(t_times *times)
 		printf(B_YE_0 "Eat limit: " RESET "%d times\n\n", times->eat_limit);
 	else
 		printf(B_YE_0 "Eat limit: " RESET B_RD_0 "Without limit\n\n" RESET);
-}
-
-void	ft_print_philo(t_philo *philo)
-{
-	printf("\n" B_PR_0 "=== Philosopher Data ===\n\n" RESET);
-	print_times(&philo->time);
 }
