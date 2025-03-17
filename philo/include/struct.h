@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 11:13:36 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/12 15:15:10 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/17 13:03:17 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,11 @@ typedef struct s_times
 
 typedef struct s_philo
 {
-	t_times		time;
-}				t_philo;
+    int				id;
+    long			last_meal_time;
+    pthread_mutex_t	meal_mutex;
+    struct s_times	time;
+} t_philo;
+
 
 #endif
