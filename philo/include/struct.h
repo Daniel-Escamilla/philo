@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 11:13:36 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/17 13:03:17 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/18 12:53:07 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,26 @@
 
 typedef struct s_times
 {
-	int			number_philos;
-	int			time_to_die;
-	int			time_to_eat;
-	int			time_to_sleep;
-	int			eat_limit;
+	int				number_philos;
+	int				time_to_die;
+	int				time_to_eat;
+	int				time_to_sleep;
+	int				eat_limit;
+	long			start_time;
+	int				next_to_eat;
+	pthread_mutex_t	turn_mutex;
 }				t_times;
 
 typedef struct s_philo
 {
-    int				id;
-    long			last_meal_time;
-    pthread_mutex_t	meal_mutex;
-    struct s_times	time;
-} t_philo;
+	int				id;
+	long			last_meal_time;
+	pthread_mutex_t	meal_mutex;
+	pthread_mutex_t	print_mutex;
+	pthread_mutex_t	*left_fork;
+	pthread_mutex_t	*right_fork;
+	struct s_times	time;
+}					t_philo;
 
 
 #endif
