@@ -6,11 +6,19 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 12:51:47 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/17 12:20:25 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/19 09:43:24 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/utils.h"
+
+long	get_timestamp(void)
+{
+	struct timeval	tv;
+
+	gettimeofday(&tv, NULL);
+	return ((tv.tv_sec * 1000) + (tv.tv_usec / 1000));
+}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
