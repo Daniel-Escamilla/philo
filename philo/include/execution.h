@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 11:09:21 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/12 11:10:08 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/19 09:51:15 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,12 @@
 # define EXECUTION_H
 
 # include "../philo.h"
+
+//ft_execution.c
+void		*monitor_routine(void *arg);
+void		*philosopher_routine(void *arg);
+pthread_t	*ft_create_threads(t_philo *philos);
+int			execute_threads(t_times *time, int i);
+t_philo		*ft_init_threads(t_times *time, int i);
 
 #endif
