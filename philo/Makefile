@@ -9,7 +9,7 @@ SRC =	src/main/ft_main.c \
 		src/utils/ft_calloc.c \
 		src/utils/ft_atoi_mod.c \
 		src/main/ft_initialice.c \
-		src/utils/ft_print_philo.c \
+		src/execution/ft_execution.c \
 
 OBJ_DIR = $(NAME)_objects
 
