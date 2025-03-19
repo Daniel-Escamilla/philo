@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 15:23:06 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/17 13:18:16 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/19 09:43:35 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,8 @@ void	*ft_calloc(size_t nmemb, size_t size);
 // ft_itoa.c
 char	*ft_itoa(long n);
 
-// ft_print_philo.c
-void	print_times(t_times *times);
-
 // ft_utils.c
+long	get_timestamp(void);
 int		ft_strlen(const char *str);
 void	ft_exit_perror(char *error, int status);
 char	*ft_strjoin(char const *s1, char const *s2);

@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 11:10:17 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/18 10:47:01 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/19 09:52:42 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,10 @@
 # include "../philo.h"
 
 // ft_main.c
-int	main(int argc, char **argv);
+int		main(int argc, char **argv);
+void	ft_free_time(t_times *time);
+void	ft_free_philo(t_philo *philos);
+int		ft_print_status(t_philo *philo, int msg_type);
 
 // ft_initialice.c
 t_times	*ft_create_time(char **argv, int argc);
