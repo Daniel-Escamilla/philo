@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/19 09:46:34 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/19 09:47:00 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/20 11:36:47 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,13 +110,13 @@ void	*monitor_routine(void *arg)
 			if (get_timestamp() - philos[i].last_meal_time
 				> philos->time.time_to_die)
 				exit(ft_print_status(&philos[i], DIED));
-			if (philos->time.eat_limit > 0
-				&& philos[i].meals_eaten == philos->time.eat_limit)
+			if (philos->time.eat_limit >= 0
+				&& philos[i].meals_eaten >= philos->time.eat_limit)
 				finished_philos++;
 			pthread_mutex_unlock(&philos[i].meal_mutex);
 			i++;
 		}
-		if (finished_philos == philos->time.number_philos)
+		if (finished_philos >= philos->time.number_philos)
 			exit(0);
 		usleep(1000);
 	}

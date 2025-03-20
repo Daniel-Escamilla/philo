@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 11:08:52 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/19 09:45:58 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/20 11:10:20 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ static int	ft_return_printf(const char *str)
 int	main(int argc, char **argv)
 {
 	t_times	*time;
-	int		ret;
+	int		status;
 
 	if (argc < 5)
 		return (ft_return_printf("Few arguments"));
@@ -72,6 +72,6 @@ int	main(int argc, char **argv)
 	if (!time)
 		return (1);
 	time->start_time = get_timestamp();
-	ret = execute_threads(time, 0);
-	return (ret);
+	status = execute_threads(time, 0);
+	return (status);
 }

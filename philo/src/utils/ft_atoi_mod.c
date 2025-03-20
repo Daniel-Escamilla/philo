@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 15:21:42 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/19 09:41:06 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/20 11:24:07 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,14 @@ static int	ft_exit_error(int *error, int status)
 
 static int	handle_sign(char *str, int *i, int *sign)
 {
-	if (str[*i] == '-')
+	if (str[*i] == '-' || str[*i] == '+')
 	{
-		*sign = -1;
+		if (str[*i] == '-')
+			*sign = -1;
 		(*i)++;
+		return (1);
 	}
-	else if (str[*i] == '+')
-		(*i)++;
-	else
-		return (0);
-	return (1);
+	return (0);
 }
 
 static int	calculate_result(char *str, int *i, int *error, int sign)
@@ -65,11 +63,10 @@ int	ft_atoi_mod(char *str, int *error)
 		return (ft_exit_error(error, 5));
 	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 		i++;
-	if (handle_sign(str, &i, &sign) && (str[i] == '-'
-			|| str[i] == '+' || (str[i] < '0' && str[i] > '9')))
+	if (handle_sign(str, &i, &sign) && (str[i] < '0' && str[i] > '9'))
 		return (ft_exit_error(error, 1));
 	result = calculate_result(str, &i, error, sign);
-	if (str[i] != '\0' && (*error != 3 && *error != 2))
+	if ((*error != 3 && *error != 2) && str[i] != '\0')
 		return (ft_exit_error(error, 4));
 	return (result * sign);
 }
