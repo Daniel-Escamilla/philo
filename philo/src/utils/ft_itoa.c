@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 12:43:31 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/17 12:03:48 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/20 11:06:43 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,9 +73,9 @@ static char	*ft_memory(int len, int sign, long n)
 
 char	*ft_itoa(long n)
 {
+	long	temp;
 	int		sign;
 	int		len;
-	long	temp;
 
 	sign = 1;
 	len = 0;

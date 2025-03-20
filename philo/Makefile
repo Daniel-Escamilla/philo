@@ -1,7 +1,7 @@
 NAME = philo
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -g3# -Wpedantic -Wconversion -Wshadow -Wstrict-overflow=5 -Wstrict-aliasing=3 -Wcast-qual -Wwrite-strings -Wundef -Wpointer-arith -Wfloat-equal -Wformat=2 -Wredundant-decls -Wmissing-prototypes -Wmissing-declarations -Wno-sign-conversion
+CFLAGS = -Wall -Wextra -Werror -g3 -Wpedantic -Wconversion -Wshadow -Wstrict-overflow=5 -Wstrict-aliasing=3 -Wcast-qual -Wwrite-strings -Wundef -Wpointer-arith -Wfloat-equal -Wformat=2 -Wredundant-decls -Wmissing-prototypes -Wmissing-declarations -Wno-sign-conversion
 
 SRC =	src/main/ft_main.c \
 		src/utils/ft_itoa.c \

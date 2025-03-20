@@ -6,7 +6,7 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 12:51:47 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/19 09:43:24 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/20 11:07:47 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = -1;
 	j = 0;
-	n = ft_strlen((char *)s1) + ft_strlen((char *)s2);
+	n = ft_strlen(s1) + ft_strlen(s2);
 	ptr = malloc(n + 1);
 	if (ptr == NULL)
 		return (NULL);

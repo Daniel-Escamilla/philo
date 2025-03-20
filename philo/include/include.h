@@ -6,13 +6,15 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 11:12:19 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/19 09:44:27 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/20 11:04:25 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef INCLUDE_H
 # define INCLUDE_H
 
+// 〖─◇──◇──◇──◇──◇──◇──◇──◇──◇──◇──◇──◇──◇│◇──◇──◇──◇──◇──◇──◇──◇──◇──◇──◇──◇─〗
+//                                    〘INCLUDE〙
 # define EATING 0
 # define SLEEPING 1
 # define FORK 2

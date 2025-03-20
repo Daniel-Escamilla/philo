@@ -6,13 +6,15 @@
 /*   By: descamil <descamil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 11:13:36 by descamil          #+#    #+#             */
-/*   Updated: 2025/03/19 09:27:36 by descamil         ###   ########.fr       */
+/*   Updated: 2025/03/20 11:04:50 by descamil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRUCT_H
 # define STRUCT_H
 
+// 〖─◇──◇──◇──◇──◇──◇──◇──◇──◇──◇──◇──◇──◇│◇──◇──◇──◇──◇──◇──◇──◇──◇──◇──◇──◇─〗
+//                                    〘STRUCT〙
 # include "../philo.h"
 
 typedef struct s_times
