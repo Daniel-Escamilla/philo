@@ -1,6 +1,6 @@
 NAME = philo
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror -g3
 SRC =	src/main/ft_main.c \
 		src/utils/ft_itoa.c \
